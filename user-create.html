@@ -193,9 +193,9 @@
             <div class="container-fluid dashboard-content">
                 <div class="row">
                     <div class="col-lg-12">
-                <!-- ============================================================== -->
-                <!-- pageheader  -->
-                <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- pageheader  -->
+                        <!-- ============================================================== -->
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="top">
@@ -203,42 +203,232 @@
                                 </div>
                             </div>
                         </div>
-                <!-- ============================================================== -->
-                <!-- end pageheader  -->
-                <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- end pageheader  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- start form  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <form>
+                                    <div class="row">
+
+                                        <div class="form-group col-3">
+                                            <label for="firstname" class="col-form-label">First name</label>
+                                            <input id="firstname" type="text" class="form-control"
+                                                   placeholder="first name">
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="lastname" class="col-form-label">Last Name</label>
+                                            <input id="lastname" type="text" class="form-control"
+                                                   placeholder="last name">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="form-group col-3">
+                                            <label for="emailaddress" class="col-form-label">Email Address</label>
+                                            <input id="emailaddress" type="text" class="form-control"
+                                                   placeholder="email address">
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="lastname" class="col-form-label">Phone Number</label>
+                                            <input id="phonenumber" type="text" class="form-control"
+                                                   placeholder="phone number">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="form-group col-3">
+                                            <label for="password" class="col-form-label">Password</label>
+                                            <input id="password" type="password" class="form-control"
+                                                   placeholder="password">
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="confpassword" class="col-form-label">Password</label>
+                                            <input id="confpassword" type="password" class="form-control"
+                                                   placeholder="confirm your password">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-3">
+                                            <label>Gender</label>
+                                            <br>
+                                            <label class="custom-control custom-radio custom-control-inline">
+                                                <input value="male" type="radio" name="gender" checked=""
+                                                       class="custom-control-input"><span class="custom-control-label">Male</span>
+                                            </label>
+                                            <label class="custom-control custom-radio custom-control-inline">
+                                                <input value="female" type="radio" name="gender"
+                                                       class="custom-control-input"><span class="custom-control-label">Female</span>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label>Choose a Role</label>
+                                            <select name="roleId" id="roleDropdown" class="custom-select"
+                                                    required="required">
+                                                <option value="none" disabled selected>Select</option>
+                                                <option value="admin">Admin</option>
+                                                <option value="manager">Manager</option>
+                                                <option value="employee">Employee</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-6">
+
+                                            <button class="btn btn-success float-right" type="submit">Save</button>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end form  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                            <div class="page-header float-md-none" id="bottom">
+                                <h2 class="pageheader-title">User List</h2>
+                            </div>
+
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email(username)</th>
+                                        <th scope="col">Gender</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Craig Jark</td>
+                                        <td>craig@cydeo.com</td>
+                                        <td>Male</td>
+                                        <td>3014331866</td>
+                                        <td>Employee</td>
+                                        <td>
+                                            <a href="#">
+                                                <button value="update" class="btn btn-warning btn-sm" >Update</button>
+                                            </a>
+                                            <a href="#">
+                                                <button  value="delete" class="btn btn-danger btn-sm" >Delete</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delissa Norre</td>
+                                        <td>delissa@cydeo.com</td>
+                                        <td>female</td>
+                                        <td>3014332226</td>
+                                        <td>Manager</td>
+                                        <td>
+                                            <a href="#">
+                                                <button value="update" class="btn btn-warning btn-sm" >Update</button>
+                                            </a>
+                                            <a href="#">
+                                                <button  value="delete" class="btn btn-danger btn-sm" >Delete</button>
+                                            </a>
+                                    </tr>
+                                    <tr>
+                                        <td>John Kesy</td>
+                                        <td>admin@cydeo.com</td>
+                                        <td>Male</td>
+                                        <td>3014331866</td>
+                                        <td>Admin</td>
+                                        <td>
+                                            <a href="#">
+                                                <button value="update" class="btn btn-warning btn-sm" >Update</button>
+                                            </a>
+                                            <a href="#">
+                                                <button  value="delete" class="btn btn-danger btn-sm" >Delete</button>
+                                            </a>
+                                        </td>
+                                    <tr>
+                                        <td>Mike Smith</td>
+                                        <td>smith@cydeo.com</td>
+                                        <td>Male</td>
+                                        <td>3014331866</td>
+                                        <td>Manager</td>
+                                        <td>
+                                            <a href="#">
+                                                <button value="update" class="btn btn-warning btn-sm" >Update</button>
+                                            </a>
+                                            <a href="#">
+                                                <button  value="delete" class="btn btn-danger btn-sm" >Delete</button>
+                                            </a>
+                                        </td>
+                                    <tr>
+                                        <td>Shaun Hayns</td>
+                                        <td>shaun@cydeo.com</td>
+                                        <td>Male</td>
+                                        <td>3014331866</td>
+                                        <td>Employee</td>
+                                        <td>
+                                            <a href="#">
+                                                <button value="update" class="btn btn-warning btn-sm" >Update</button>
+                                            </a>
+                                            <a href="#">
+                                                <button  value="delete" class="btn btn-danger btn-sm" >Delete</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
-    <!-- end wrapper  -->
-    <!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- end main wrapper  -->
+    <!-- end main wrapper  -->
 
-<!-- ============================================================== -->
-<!-- Optional JavaScript -->
-<!-- jquery 3.3.1 -->
-<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-<!-- bootstap bundle js -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<!-- slimscroll js -->
-<script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-<!-- main js -->
-<script src="assets/libs/js/main-js.js"></script>
-<!-- chart chartist js -->
-<script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-<!-- sparkline js -->
-<script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-<!-- morris js -->
-<script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-<script src="assets/vendor/charts/morris-bundle/morris.js"></script>
-<!-- chart c3 js -->
-<script src="assets/vendor/charts/c3charts/c3.min.js"></script>
-<script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-<script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
-<script src="assets/libs/js/dashboard-ecommerce.js"></script>
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
 </html>
